@@ -1,0 +1,16 @@
+#access to remote mysql base
+[database]
+host = '144.0.0.0'
+login = 'YOURLOGIN'
+passwd = 'YOURPASS'
+port = '3306'
+name = 'DB_NAME'
+
+[dbtable]
+updtable = 'table_for_update'
+updrow = 'row'
+updwhere = '3'
+
+[web]
+page = 'https://example.com/prices/'
+replacestr = 'some_string'
