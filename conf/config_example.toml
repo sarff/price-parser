@@ -13,4 +13,4 @@ updwhere = '3'
 
 [web]
 page = 'https://example.com/prices/'
-replacestr = 'some_string'
+replacestr = ["text1","'ukrsymbol","'ukrsymbol2 (for example 'я)", "etc"]
