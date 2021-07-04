@@ -10,7 +10,10 @@ name = 'DB_NAME'
 updtable = 'table_for_update'
 updrow = 'row'
 updwhere = '3'
+updwhere2 = "21"
 
 [web]
 page = 'https://example.com/prices/'
+page_upd = 'https://example.com/prices/'
 replacestr = ["text1","'ukrsymbol","'ukrsymbol2 (for example 'я)", "etc"]
+add_string_before = '<h6>SOME TEXT</h6>'
