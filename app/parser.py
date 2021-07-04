@@ -43,7 +43,7 @@ class Parce():
             else:
                 table = table.replace(replacestr[i], r"\%s" % (replacestr[i]))
         table = table.replace('border="0"','border="2"')
-        add_data = r'<h6><span style="font-size: 14pt;">Доверьте профессионалам обновление Вашей 1С</span><img style="margin: 5px 0px 10px; float: right;" src="images/update1c.png" alt="update1c" width="400" height="229" /></h6><div><p style="line-height: 24px;">&nbsp;</p><ul style="margin-top: 0px; margin-bottom: 10px;"><li style="line-height: 24px;"><span style="font-size: 12pt;">Своевременное обновление</span></li><li style="line-height: 24px;"><span style="font-size: 12pt;">Профилактические работы</span></li><li style="line-height: 24px;"><span style="font-size: 12pt;">Резервное копирование</span></li><li style="line-height: 24px;"><span style="font-size: 12pt;">Сохранение прошлых доработок</span></li></ul></div><div>'
+        add_data = config.get('web').get('add_string_before')
         upd_table = "%s %s" % (add_data, table)
 
         return upd_table
