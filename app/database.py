@@ -2,6 +2,7 @@ import mysql.connector
 import toml
 
 config = toml.load("conf/config.toml")
+#config = toml.load("/root/priceupdate/price-parser/conf/config.toml")
 updtable = config.get('dbtable').get('updtable')
 updrow = config.get('dbtable').get('updrow')
 updwhere = config.get('dbtable').get('updwhere')

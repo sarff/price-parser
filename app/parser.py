@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import datetime
 
 config = toml.load("conf/config.toml")
+#config = toml.load("/root/priceupdate/price-parser/conf/config.toml")
 url = config.get('web').get('page')
 url_upd = config.get('web').get('page_upd')
 replacestr = config.get('web').get('replacestr')
