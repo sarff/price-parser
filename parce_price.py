@@ -1,6 +1,5 @@
 from app.database import MySql
 from app.parser import Parce
-import toml
 
 if __name__ == '__main__':
     newtable = Parce.returntable()
